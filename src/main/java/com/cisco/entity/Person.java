@@ -21,8 +21,8 @@ public class Person implements Serializable {
     public Person() {
     }
 
-    public Person( int num, String name, int age) {
-        this.personId = num;
+    public Person( int personId, String name, int age) {
+        this.personId = personId;
         this.name = name;
         this.age = age;
     }
@@ -35,12 +35,12 @@ public class Person implements Serializable {
         this.id = id;
     }
 
-    public int getNum() {
+    public int getPersonId() {
         return personId;
     }
 
-    public void setNum(int num) {
-        this.personId = num;
+    public void setPersonId(int personId) {
+        this.personId = personId;
     }
 
     public String getName() {
@@ -63,7 +63,7 @@ public class Person implements Serializable {
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", num=" + personId +
+                ", personId=" + personId +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
